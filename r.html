@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23811306-1', 'pegasgames.com');
+  ga('send', 'pageview');
+
+</script>
+<meta property="og:image" content="http://www.pegasgames.com/games/images/wheely4_181_95_2.png"/>
+
+<title>Wheely 4: Time Travel - Games - Free Online Games at Pegas Games!</title>
+
+<script type="text/javascript" src="http://www.pegasgames.com/includes/avarcade.js"></script>
+<link rel="alternate" type="application/rss+xml" title="http://www.pegasgames.com" href="http://www.pegasgames.com/rss.php" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="description" content="Wheely broke his wheel and decided to visit his friend at car service, but something whent wrong." />
+	<meta name="keywords" content="" /><link rel="canonical" href="http://www.pegasgames.com/games/330/wheely-4-time-travel/pre_view" />
+<link rel="shortcut icon" href="http://www.pegasgames.com/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="http://www.pegasgames.com/favicon.ico" type="image/x-icon" />
+
+<style type="text/css">
+/* Game fullscreen */
+.flash_popup {
+	position: fixed;
+	z-index: 3;
+	top: 0%;
+    left: 50%;
+    margin: 0 auto;
+}
+.close_fullscreen {
+	z-index: 4;
+	position: fixed;
+	display: none;
+	top: 0px;
+	right: 0px;
+	background-color: #000;
+	color: #fff;
+	font-family: Arial;
+	font-size: 18px;
+	padding: 5px;
+}
+.close_fullscreen a {
+	text-decoration: none;
+	color: #fff;
+}
+</style><link rel="stylesheet" type="text/css" href="http://www.pegasgames.com/templates/orange/style.css" />
+
+
+<!-- Âñòàâüòå ýòîò òåã â çàãîëîâîê èëè íåïîñðåäñòâåííî ïåðåä çàêðûâàþùèì òåãîì . -->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script> 
+
+	 <script language="JavaScript">
+	  	var jsReady = false;
+	     function isReady() {
+	         return jsReady;
+	     }
+	     function pageInit() {
+	         jsReady = true;	         
+	     }
+	     function thisMovie(movieName) {
+	         if (navigator.appName.indexOf("Microsoft") != -1) {
+	             return window[movieName];
+	         } else {
+	             return document[movieName];
+	         }
+	     }
+	     function sendToActionScript() {	     	
+	     	 ShowAdSwf();
+	     	 
+	         thisMovie("ExternalInterfaceExample").ShowPrerollAd();
+	     }
+	     
+	 </script>
+	<script language="JavaScript"> 
+	
+	function getSWF(movieName) 
+	{ 
+	    if (navigator.appName.indexOf("Microsoft") != -1) 
+	    { 
+	        return window[movieName]; 
+	    } 
+	    else 
+	    { 
+	        return document[movieName]; 
+	    } 
+	} 
+	
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+	<!-- MUST INCLUDE THIS LINE TO DESTROY PRELOADER-->
+	<script type="text/javascript">
+
+		var CanShowAds = true;
+		var can_show_ad_timeout = 180000;//3 * 60 * 1000;
+		var gameSWF;// = new Object();
+		var swfObj = new Object(); 
+
+		function InitGame()
+        {
+        	//alert("InitGame!");
+        	gameSWF = getSWF("game");        		
+        }
+
+		function CanShowAdTimeout() 
+		{
+			CanShowAds = true;			
+		}
+
+		function ShowAdSwf() {
+			document.getElementById("game_holder").style.visibility  	= "hidden";
+			//document.getElementById("place_holder").style.display 			= 'block';
+			document.getElementById("place_holder").style.visibility 	= 'visible';
+			document.getElementById("place_holder").style.height 		= "600px";
+		}
+		function removeAdSwf() 
+		{
+			if(gameSWF)
+			{
+				try 
+        		{
+        			gameSWF.ResumeGame();
+				} catch (err) 
+				{
+				  // обработка ошибки
+				}
+				//getSWF("game").ResumeGame();
+			}
+
+			document.getElementById("game_holder").style.visibility  	= "visible";
+			//document.getElementById("place_holder").style.display 			= 'none';
+			document.getElementById("place_holder").style.visibility 	= 'hidden';
+			document.getElementById("place_holder").style.height 		= "0px";
+		}
+		function noAdsReturned() {
+			removeAdSwf();
+		}
+	
+		
+		function InitSWF()
+        {        	
+        	//alert("InitSWF!");
+        	swfObj = swfobject.getObjectById("ad_loader");
+        	
+        	ShowPrerollAd();
+
+        	//sendToActionScript();
+        }
+
+        function ShowPrerollAd()
+        {        	
+        	if(CanShowAds)
+        	{
+        		CanShowAds = false;
+	        	ShowAdSwf();
+	        	//swfObj.ShowPrerollAd();
+	        	swfObj.ShowPrerollAd();
+
+	        	setTimeout(CanShowAdTimeout, can_show_ad_timeout);    	
+	        }
+        }  
+
+        function ShowInterlevelAd()
+        {
+        	if(CanShowAds)
+        	{
+        		CanShowAds = false;
+        		ShowAdSwf();
+
+        		try 
+        		{
+        			gameSWF.StopGame();
+				} catch (err) 
+				{
+				  // обработка ошибки
+				}
+
+        		swfObj.ShowInterlevelAd();
+
+        		setTimeout(CanShowAdTimeout, can_show_ad_timeout);
+        	}
+        }  
+        //http%3A%2F%2Fgoogleads.g.doubleclick.net%2Fpagead%2Fads%3Fad_type%3Dvideo_image_text_flash%26client%3Dca-games-pub-4968145218643279%26videoad_start_delay%3D0%26description_url%3Dhttp%253A%252F%252Fwww.example.com%26max_ad_duration%3D40000%26hl%3Den%26adtest%3Don
+
+        // mine: http%3A%2F%2Fgoogleads.g.doubleclick.net%2Fpagead%2Fads%3Fad_type%3Dvideo_text_image_flash%26client%3Dca-games-pub-2780207254084680%26description_url%3Dhttp%253A%252F%252Fwww.pegasgames.com%252Fgames%252F304%252Fwheely%252F%26videoad_start_delay%3D0%26hl%3Den%26max_ad_duration%3D30000
+        var flashvars = {
+        	adTagUrl: "http%3A%2F%2Fgoogleads.g.doubleclick.net%2Fpagead%2Fads%3Fad_type%3Dvideo_text_image_flash%26client%3Dca-games-pub-2780207254084680%26description_url%3Dhttp%253A%252F%252Fwww.pegasgames.com%252Fgames%252F304%252Fwheely%252F%26videoad_start_delay%3D0%26hl%3Den%26max_ad_duration%3D30000"
+		  };
+		  var params = {
+		   menu: "false",
+		   scale: "noScale",
+		   allowFullScreen: "false",
+		   allowScriptAccess: "always",
+		   bgcolor: "#ffffff",
+		   quality: "high"
+		   //wmode: "direct" 
+		  };
+		  var attributes = {
+		   id:"ad_loader"
+		  };
+		  
+		  
+
+    </script>
+
+</head>
+
+<body onload="pageInit();">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=209124342500880";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div style="width: 1280px; height: 700px; margin: auto;">
+
+	<!-- left -->
+	<div style="width: 180px; margin: 0px 39px 0px 0px; float: left;">
+		<div style = "width: 160px; height: 62px; padding-bottom: 10px; padding-left: 12px;">
+			<a href="http://www.pegasgames.com/">
+				<img src="http://pegasgames.com/images/PegasGames_308_120.png" alt="Pegas Games" width="160" height="62">			
+			</a>
+		</div>
+		
+		<div style="width: 160px; height: 600px; float: left; text-align: center;padding: 10px 10px 10px 10px; background-color: #ffffff; margin-bottom: 10px;"> 
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- gameplay_left -->
+			<ins class="adsbygoogle"
+			     style="display:inline-block;width:160px;height:600px"
+			     data-ad-client="ca-pub-8343137609766715"
+			     data-ad-slot="3393270927"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+	</div>
+	
+	<div style="width: 180px; float: right; margin-left: 50px;">	
+		<div style="width: 160px; height: 600px; float: right; text-align: center; margin-top: 75px; padding: 10px 10px 10px 10px; background-color: #ffffff; margin-bottom: 10px;"> 
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- gameplay_right -->
+			<ins class="adsbygoogle"
+			     style="display:inline-block;width:160px;height:600px"
+			     data-ad-client="ca-pub-8343137609766715"
+			     data-ad-slot="3196917685"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>		
+	</div>
+
+	<!-- right -->
+	<div style="width: 820px; float: right;">	
+
+		
+
+		<div class="game_header" style="width: 820px; height: 72px; float: left;">
+			<div class="game_header_image" style="width: 104px; height: 54px; margin: 10px 0px 0px 10px; border: 1px solid #000000;">
+				<img src="http://www.pegasgames.com/games/images/wheely4_181_95_2.png" width="104" height="54" alt="Game image" />
+			</div>
+			
+			<div class="game_header_left" style="height: 54px; margin: 10px 0px 0px 10px;">
+				<div class="game_header_text">
+					
+					<div class="game_title" style="width: 500px;">Wheely 4: Time Travel</div>
+					
+					<!- Facebook ->
+					<div class="fb-like" style = "width: 140px;float: left; margin-top: 5px; margin-left: 3px;" data-href="" data-send="false" data-layout="button_count" data-width="140" data-show-faces="false"></div>
+					<br />
+					
+					<div style="float:left; padding: 5px 0px 0px 0px;">
+						<!-- Ïîìåñòèòå ýòîò òåã òóäà, ãäå äîëæíà îòîáðàæàòüñÿ êíîïêà +1. -->
+						<g:plusone size="medium"></g:plusone>
+					</div>
+					
+					<div style="float:left; padding: 5px 0px 0px 0px;">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-via="PegasGames" data-hashtags="PegasGames">Tweet</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
+			
+				</div>
+				
+				<div class="game_info_column1">
+					&nbsp; Times played: <br>286167 &nbsp;				</div>
+			</div>
+		</div>
+		
+				
+				
+				<div class="main_container_wh" style="width: 800px; height: 600px; padding: 2px 10px 10px 10px; float: left; text-align: center;">
+					<div id="place_holder" style="text-align: center; width:auto; height: 0px;">
+						<div id="place_here" style="text-align: center;">
+
+							<script type="text/javascript">
+								var MyJSStringVar = "http%3A%2F%2Fwww.pegasgames.com%2Fgames%2F330%2Fwheely-4-time-travel%2F";
+								//var fullTagUrl = "http%3A%2F%2Fgoogleads.g.doubleclick.net%2Fpagead%2Fads%3Fad_type%3Dvideo_text_image_flash%26client%3Dca-games-pub-2780207254084680%26description_url%3D" + MyJSStringVar + "%26channel%3D3560632453%26videoad_start_delay%3D0%26hl%3Den%26max_ad_duration%3D30000";
+								//var full_interlevel_TagUrl = "http%3A%2F%2Fgoogleads.g.doubleclick.net%2Fpagead%2Fads%3Fad_type%3Dvideo_text_image_flash%26client%3Dca-games-pub-2780207254084680%26description_url%3D" + MyJSStringVar + "%26channel%3D5037365653%26videoad_start_delay%3D0%26hl%3Den%26max_ad_duration%3D30000";
+
+								var fullTagUrl = "http%3A%2F%2Fgoogleads.g.doubleclick.net%2Fpagead%2Fads%3Fad_type%3Dvideo_text_image_flash%26client%3Dca-games-pub-8343137609766715%26description_url%3D" + MyJSStringVar + "%26channel%3D3560632453%26videoad_start_delay%3D0%26hl%3Den%26max_ad_duration%3D30000";
+								var full_interlevel_TagUrl = "http%3A%2F%2Fgoogleads.g.doubleclick.net%2Fpagead%2Fads%3Fad_type%3Dvideo_text_image_flash%26client%3Dca-games-pub-8343137609766715%26description_url%3D" + MyJSStringVar + "%26channel%3D5037365653%26videoad_start_delay%3D0%26hl%3Den%26max_ad_duration%3D30000";
+
+								//alert(fullTagUrl);
+								flashvars.adTagUrl = fullTagUrl;
+								flashvars.adTag_interlevel_Url = full_interlevel_TagUrl;
+								//"http%3A%2F%2Fgoogleads.g.doubleclick.net%2Fpagead%2Fads%3Fad_type%3Dvideo_text_image_flash%26client%3Dca-games-pub-2780207254084680%26description_url%3Dhttp%253A%252F%252Fwww.pegasgames.com%252Fgames%252F304%252Fwheely%252F%26videoad_start_delay%3D0%26hl%3Den%26max_ad_duration%3D30000";
+								//alert("adTagUrl: " + fullTagUrl);
+								swfobject.embedSWF(
+							   "http://pegasgames.com/adsense-for-games-test/preloader.swf", 
+							   "place_here", "800", "600", "10.0.0", 
+							   "expressInstall.swf", 
+							   flashvars, params, attributes);//*/
+							</script>
+
+						</div> 
+					</div>
+
+					<div id="game_holder" style="text-align: center; visiblity: hidden; padding-top: 0px; vertical-align: middle;">
+						
+
+<div id="ava-game_container">		
+		
+			
+					<div class = "swf_container" style="margin-top: 0px; height: 480px;">  						
+						<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="640" height="480" id="eID">
+						<param name="movie" value="http://www.pegasgames.com/games/Wheely4.swf" />
+						<!--[if !IE]>-->
+						<object type="application/x-shockwave-flash" data="http://www.pegasgames.com/games/Wheely4.swf" width="640" height="480" id="game">
+						<!--<![endif]-->
+						<!--[if !IE]>-->
+						</object>
+						<!--<![endif]-->
+						</object>	
+					</div>			
+		<div style="clear: both;"></div> </div> <div style="clear: both;"></div>					</div>
+				</div>	
+
+				
+		
+
+		<div style = "width: 820px; float: left; background-color: #ffffff; text-align: center; margin-bottom: 10px; ">
+			<div style = "font-size: 25px; font-family: Verdana, Geneva, sans-serif;">
+				More Cool Games
+			</div>
+			
+<div class="random_game" style="width: 186px; height: 97px; margin-left: 13px; margin-bottom: 10px;">
+		<div class="random_game_image" style="width: 186px; height: 97px;">
+			<a href="http://www.pegasgames.com/games/335/wheely-6-fairytale/pre_view"><img src="http://www.pegasgames.com/games/images/wheely6_190_100.png" width="186" height="97"  alt="Wheely 6…" /></a>
+		</div> 
+	
+	<br style="clear:both" />
+</div>
+<div class="random_game" style="width: 186px; height: 97px; margin-left: 13px; margin-bottom: 10px;">
+		<div class="random_game_image" style="width: 186px; height: 97px;">
+			<a href="http://www.pegasgames.com/games/295/ragdoll-achievement/pre_view"><img src="http://www.pegasgames.com/games/images/ra_190_100.png" width="186" height="97"  alt="Ragdoll …" /></a>
+		</div> 
+	
+	<br style="clear:both" />
+</div>
+<div class="random_game" style="width: 186px; height: 97px; margin-left: 13px; margin-bottom: 10px;">
+		<div class="random_game_image" style="width: 186px; height: 97px;">
+			<a href="http://www.pegasgames.com/games/332/wheely-5-armageddon/pre_view"><img src="http://www.pegasgames.com/games/images/wheely5_190_100.png" width="186" height="97"  alt="Wheely 5…" /></a>
+		</div> 
+	
+	<br style="clear:both" />
+</div>
+<div class="random_game" style="width: 186px; height: 97px; margin-left: 13px; margin-bottom: 10px;">
+		<div class="random_game_image" style="width: 186px; height: 97px;">
+			<a href="http://www.pegasgames.com/games/291/zomboz/pre_view"><img src="http://www.pegasgames.com/games/images/zomboz.jpg" width="186" height="97"  alt="Zomboz" /></a>
+		</div> 
+	
+	<br style="clear:both" />
+</div>		</div>
+		
+		
+	</div>
+
+	
+	
+</div>
+
+	
+	
+</div>
+
