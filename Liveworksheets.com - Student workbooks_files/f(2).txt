@@ -1,0 +1,13 @@
+(function(){/* 
+ 
+ Copyright The Closure Library Authors. 
+ SPDX-License-Identifier: Apache-2.0 
+*/ 
+/* 
+ 
+ SPDX-License-Identifier: Apache-2.0 
+*/ 
+function e(a,b,c){a.addEventListener&&a.addEventListener(b,c,!1)};function g(a,b,c){if(Array.isArray(b))for(var d=0;d<b.length;d++)g(a,String(b[d]),c);else null!=b&&c.push(a+(""===b?"":"="+encodeURIComponent(String(b))))};function h(a,b){a.google_image_requests||(a.google_image_requests=[]);var c=a.document;c=void 0===c?document:c;c=c.createElement("img");c.src=b;a.google_image_requests.push(c)};function k(){var a=document.currentScript;return(a=void 0===a?null:a)&&"22"===a.getAttribute("data-jc")?a:document.querySelector('[data-jc="22"]')};var l=document,m=window;function n(){var a=p["gws-id"],b=p["qem-id"];this.l=p.url;this.m=a;this.o=b;this.i=!1;a=q(l.hidden)?{g:"hidden",h:"visibilitychange"}:q(l.mozHidden)?{g:"mozHidden",h:"mozvisibilitychange"}:q(l.msHidden)?{g:"msHidden",h:"msvisibilitychange"}:q(l.webkitHidden)?{g:"webkitHidden",h:"webkitvisibilitychange"}:{g:"hidden",h:"visibilitychange"};this.g=a.g;this.h=a.h;this.j=-1;l[this.g]&&r(this,2);t(this);u(this)} 
+function t(a){e(l,a.h,function(){if(l[a.g])a.i&&(a.i=!1,a.j=Date.now(),r(a,0));else{if(-1!==a.j){var b=Date.now()-a.j;0<b&&(a.j=-1,r(a,1,b))}r(a,3)}})}function u(a){e(m,"click",function(b){a.handleClick(b)})}n.prototype.handleClick=function(){var a=this;this.i=!0;m.setTimeout(function(){a.i=!1},5E3)}; 
+function r(a,b,c){c=void 0===c?0:c;var d={gqid:a.m,qqid:a.o};0===b&&(d["return"]=0);1===b&&(d["return"]=1,d.timeDelta=c);2===b&&(d.bgload=1);3===b&&(d.fg=1);b=[];for(var v in d)g(v,d[v],b);h(m,a.l+"&label=window_focus&"+b.join("&"));var f=void 0===f?.01:f;if(!(Math.random()>f)){a=k();f="https://pagead2.googlesyndication.com/pagead/gen_204?id=jca&jc=22&version="+(a&&a.getAttribute("data-jc-version")||"unknown")+"&sample="+f;a=window;if(d=a.navigator)d=a.navigator.userAgent,d=/Chrome/.test(d)&&!/Edge/.test(d)? 
+!0:!1;d&&a.navigator.sendBeacon?a.navigator.sendBeacon(f):h(a,f)}}function q(a){return"undefined"!==typeof a};var w=k();if(null==w)throw Error("JSC not found 22");for(var p={},x=w.attributes,y=x.length-1;0<=y;y--){var z=x[y].name;0===z.indexOf("data-jcp-")&&(p[z.substring(9)]=x[y].value)}window.window_focus_for_click=new n;}).call(this);
