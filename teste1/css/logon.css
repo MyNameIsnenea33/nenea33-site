@@ -1,0 +1,159 @@
+body{
+ 
+    background-image: url(../assets/login1.jpeg);
+    background-size: cover;   
+}
+
+p{
+    color: white;
+}
+#top{
+    background-color: #00309c;
+    top:0;
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+    left: 0;
+    z-index: -1;
+    border-bottom: 1px solid orange;
+}
+#adminlogin {
+    position:absolute;
+    right:1.2em;
+    bottom:-0.4em;
+}
+textarea {
+    border-radius: 10px 10px 10px 10px;
+    float:left;
+    margin-right:0.5em;
+}
+#button{
+    float:right;
+}
+input{
+    height: 25px;
+    width: 25px;
+    display:inline-block;
+}
+#admin{
+    position: relative;
+    right: 45em;
+    top: 30em;
+    cursor: pointer;
+}
+
+.adminz{
+    left: 50%;
+    position: relative;
+    top: 35vh;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.adminz img{
+    border:2px solid white;
+}
+
+.adminz p{
+    display: inline-block;
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+        font-size: 16px;
+    color: white;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+
+
+#img-admin{
+    border:2px solid white;
+}
+
+#admin-text{
+    margin: 0;
+
+}
+#michael {
+    position:absolute;
+    right:27.7em;
+    top:15.5em;
+}
+#michaellogin {
+    position:absolute;
+    right:1.2em;
+    bottom:-4.4em;
+}
+#turnoff{
+    position:absolute;
+    bottom:0;
+    float:left;
+}
+#admin figure img{
+    display:inline-block;
+    margin-right:0.7em;
+    float: left;
+    border: 2px solid white;
+    height: 35px;
+    width: 35px;
+    border-radius: 4px 4px 4px 4px;
+    margin-top: 1em;
+}
+#admin p {
+    display:inline-block;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    font-family:sans-serif;
+    
+}
+#michael figure img{
+    display:inline-block;
+    margin-right:0.7em;
+    float: left;
+    border: 2px solid white;
+    height: 35px;
+    width: 35px;
+    border-radius: 4px 4px 4px 4px;
+    margin-top: 1em;
+}
+#michael p {
+    display:inline-block;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+#bground {
+    background-color: #00309c;
+    bottom:0;
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+    left: 0;
+    z-index: -1;
+    
+}
+#turnoff figure img{
+    display:inline-block;
+    margin-right:0.5em;
+    float: left;
+    border: 2px solid white;
+    height: 25px;
+    width: 25px;
+    border-radius: 3px 3px 3px 3px;
+    margin-top:1em;
+    z-index: 2;
+    cursor: pointer;
+}
+#turnoff p {
+    display:inline-block; 
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    font-family:sans-serif;
+    z-index: 2;
+    top: 5px;
+    position: relative;
+    cursor: pointer;
+}

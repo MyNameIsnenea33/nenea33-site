@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration-style: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration-style: none;
+}
+
+.taskbar {
+    width: 92.5%;
+    color: white;
+    height: 3vh;
+    background-image: url(../assets/taskbar.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.desktop {
+    background-image: url(../assets/wallpaper.jpg);
+    height: 97vh;
+}
+
+.start-button {
+    width: 5vw;
+    background-image: url(../assets/start.png);
+    height: 3vh;
+    cursor: pointer;
+   
+}
+
+#start-menu {
+    height: 60vh;
+    width: 25vw;
+    bottom: 0;
+    position: absolute;
+    display: none;
+    -webkit-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 0px 5px 0px rgba(0, 0,f 0, 0.75);
+    box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#start-menu .start-name {
+    color: white;
+    font-size: 2rem;
+    left: 15%;
+    position: relative;
+    top: 30%;
+    cursor: pointer;
+}
+
+.start-menu-top {
+    background-image: url(../assets/starttop.png);
+    width: 100%;
+    height: 6vh;
+    background-repeat: none;
+}
+
+.start-side {
+    width: 50%;
+    background-color: white;
+    height: 75%;
+    display: inline-block;
+    border-right: 1px solid blue;
+    border-top: 1px solid orange;
+}
+
+#right-side {
+    float: right;
+    background-color: #d3e5fa;
+    position: relative;
+}
+
+.lebox {
+    width: 100%;
+    height: 10%;
+}
+
+#all-prog {
+    height: 7%;
+}
+
+.lebox p,
+strong {
+    top: 25%;
+    position: relative;
+    padding-left: 15px;
+}
+
+.lebox:hover {
+    background-color: #316ac5;
+    color: white;
+    cursor: pointer;
+}
+
+.iconz {
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+
+.iconz:hover {
+    cursor: pointer;
+}
+
+.icon-pic {
+    left: 25%;
+    position: relative;
+}
+
+#bin {
+    left: 12%;
+}
+
+#bin-box {
+    top: 90%;
+    left: 88%;
+    position: relative;
+}
+
+.start-menu-box {
+    background-image: url(../assets/startmenubox.png);
+    width: 100%;
+    height: 15%;
+    background-position: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.shutdown {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    color: white;
+    padding-right: 25px;
+    padding-top: 10px;
+}
+
+.shutdown p {
+    padding-left: 5px;
+}
+
+.log-off {
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    float: right;
+    padding-right: 25px;
+    padding-top: 10px;
+}
+
+#right-box-taskbar {
+    background-image: url(../assets/right-side.png);
+    width: 7.5vw;
+    height: 3vh;
+    cursor: pointer;
+    float: right;
+
+}
+
+#timing {
+    margin: 0;
+    color: white;
+    float: right;
+    padding-top: 5px;
+    padding-right: 5px;
+}

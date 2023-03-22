@@ -1,0 +1,15 @@
+html {
+	background: #000080;
+}
+
+body {
+	font-family: Lucida Console;
+	color: white;
+	font-size: 2rem;
+}
+
+body {
+  cursor: none;
+  margin: 0;
+  height: 100vh;
+}
