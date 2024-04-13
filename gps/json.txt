@@ -21,3 +21,11 @@
     "vehicleLong": "active",
     "vehicleDate": "active"
   },
+
+[
+  {
+    "vehicleName": "157",
+    "vehicleLat": "1b",
+    "vehicleLong": "1b",
+    "vehicleDate": "13-04-2024"
+  },
