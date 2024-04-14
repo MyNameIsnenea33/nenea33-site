@@ -25,7 +25,7 @@
 [
   {
     "vehicleName": "157",
-    "vehicleLat": "1b",
-    "vehicleLong": "1b",
+    "vehicleLat": "Depou Gara",
+    "vehicleLong": "Depou Gara",
     "vehicleDate": "13-04-2024"
   },
