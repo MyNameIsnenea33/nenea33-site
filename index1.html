@@ -7,14 +7,95 @@
 <hl><font color="black"><p><u>nenea33</u></p>
 </center>
 <!-- Tema-stilul site-ului -->
-<style>
-body {
-  background-image: url('texturamain.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-</style>
+<style type="text/css">
+    table, td, th {
+      -webkit-text-size-adjust: 100%; 
+      -ms-text-size-adjust: 100%; 
+      text-size-adjust: 100%;
+    }
+
+    body,td,th {
+      color: rgba(51,255,0,1);
+      font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+    }
+    body {
+      background-attachment: fixed;
+      background-attachment: center;
+      background-image: url(images/Star_BG.gif);
+      background-repeat: repeat;
+      background-color: rgba(0,0,0,1);
+    }
+    a:link {
+      color: rgba(116,9,245,1);
+    }
+    a:visited {
+      color: rgba(0,61,11,1);
+    }
+    a:hover {
+      color: rgba(168,7,228,1);
+    }
+    a:active {
+      color: #CD01B4;
+    }
+ 
+    
+    .scrollable-box {
+      perspective: 800px;
+    }
+
+    
+    .rotating-image {
+      display: inline-block;
+      transform-style: preserve-3d;
+      animation: rotateImage 10s infinite linear;
+    }
+
+    
+    .rotating-image:nth-child(1) {
+      transform: rotateY(0deg);  
+    }
+    .rotating-image:nth-child(2) {
+      transform: rotateY(30deg); 
+    }
+    .rotating-image:nth-child(3) {
+      transform: rotateY(60deg); 
+    }
+    .rotating-image:nth-child(4) {
+      transform: rotateY(90deg); 
+    }
+    .rotating-image:nth-child(5) {
+      transform: rotateY(120deg); 
+    }
+    .rotating-image:nth-child(6) {
+      transform: rotateY(150deg); 
+    }
+    .rotating-image:nth-child(7) {
+      transform: rotateY(180deg); 
+    }
+    .rotating-image:nth-child(8) {
+      transform: rotateY(210deg); 
+    }
+    .rotating-image:nth-child(9) {
+      transform: rotateY(240deg); 
+    }
+    .rotating-image:nth-child(10) {
+      transform: rotateY(270deg); 
+    }
+    .rotating-image:nth-child(11) {
+      transform: rotateY(300deg); 
+    }
+
+    
+    @keyframes rotateImage {
+      0% {
+        transform: rotateY(0deg); 
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+	
+	 </style>
 <!-- Tema-stilul site-ului -->
   
  <!-- Redirectionarile la alte pagini --> 
@@ -55,3 +136,4 @@ Apasa aici pentru a afla data si timpul.</button>
 </body>
 </html>
 <!-- Gif-urile -->
+
