@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harta live</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>html, body, #map { height: 100%; margin: 0; background: #1b1b1b; }</style>
+</head>
+<body>
+<div id="map"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+// ===== SETEAZĂ AICI =====
+// Limitele hărții tale în studs (coordonatele din Roblox, axele X și Z)
+const WORLD = { minX: -1000, maxX: 1000, minZ: -1000, maxZ: 1000 };
+// Imaginea hărții (pusă în folderul public/)
+const IMAGE = "map.png";
+// ========================
+
+// Leaflet CRS.Simple folosește [y, x], iar y crește în sus.
+// În Roblox, -Z este "nordul" hărții, deci y = -z.
+const bounds = [[-WORLD.maxZ, WORLD.minX], [-WORLD.minZ, WORLD.maxX]];
+const toLatLng = (x, z) => [-z, x];
+
+const map = L.map("map", { crs: L.CRS.Simple, minZoom: -3, maxZoom: 3, zoomSnap: 0.25 });
+L.imageOverlay(IMAGE, bounds).addTo(map);
+map.fitBounds(bounds);
+map.setMaxBounds(L.latLngBounds(bounds).pad(0.2));
+
+const cars = {}; // cheie -> { marker, x, z, vx, vz, t }
+
+async function refresh() {
+  try {
+    const list = await (await fetch("/vehicles")).json();
+    const now = performance.now();
+    const seen = new Set();
+    for (const v of list) {
+      const key = v.server + ":" + v.id;
+      seen.add(key);
+      let c = cars[key];
+      if (!c) {
+        c = cars[key] = {
+          marker: L.circleMarker(toLatLng(v.x, v.z), {
+            radius: 6, color: "#fff", weight: 2, fillColor: "#e63946", fillOpacity: 1
+          }).addTo(map)
+        };
+        c.marker.bindTooltip(String(v.label || v.id));
+      }
+      Object.assign(c, { x: v.x, z: v.z, vx: v.vx || 0, vz: v.vz || 0, t: now });
+    }
+    // șterge vehiculele care nu mai există
+    for (const key in cars) {
+      if (!seen.has(key)) { cars[key].marker.remove(); delete cars[key]; }
+    }
+  } catch (e) {
+    console.error("Eroare la încărcarea vehiculelor:", e);
+  }
+}
+
+// Mișcare fluidă: între două actualizări, estimăm poziția din viteză
+function animate() {
+  const now = performance.now();
+  for (const key in cars) {
+    const c = cars[key];
+    const dt = Math.min((now - c.t) / 1000, 1.5);
+    c.marker.setLatLng(toLatLng(c.x + c.vx * dt, c.z + c.vz * dt));
+  }
+  requestAnimationFrame(animate);
+}
+
+refresh();
+setInterval(refresh, 1000);
+animate();
+</script>
+</body>
+</html>
